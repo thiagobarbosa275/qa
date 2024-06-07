@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.17.0/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.8.5/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.17.0/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.17.0/dist/index.js"></script><script>(()=>{setTimeout(()=>{const{markmap:O,mm:h}=window,M=new O.Toolbar;M.attach(h);const oe=M.render();oe.setAttribute("style","position:absolute;bottom:20px;right:20px"),document.body.append(oe)})})()</script><script>((i,L,f,r)=>{const w=i();window.mm=w.Markmap.create("svg#mindmap",(L||w.deriveOptions)(r),f)})(()=>window.markmap,null,{"content":"Processo de Estoque e Job Warehouse","children":[{"content":"Verificar Estoque","children":[{"content":"Estoque Virtual &gt; 0","children":[{"content":"Produto Disponível no Site","children":[{"content":"Venda Realizada","children":[],"payload":{"lines":"5,6"}},{"content":"Atualizar Estoque","children":[{"content":"Estoque Automático","children":[{"content":"Atualizar com Base no Estoque Físico","children":[],"payload":{"lines":"8,9"}}],"payload":{"lines":"7,9"}},{"content":"Estoque Automático + Fabricante","children":[{"content":"Atualizar com Base no Estoque Físico + Estoque do Fabricante","children":[],"payload":{"lines":"10,11"}}],"payload":{"lines":"9,11"}},{"content":"Estoque Manual","children":[{"content":"Baixa Manual do Estoque Virtual","children":[],"payload":{"lines":"12,13"}}],"payload":{"lines":"11,13"}},{"content":"Estoque Fixo","children":[{"content":"Manter Quantidade Constante no Estoque Virtual","children":[],"payload":{"lines":"14,15"}}],"payload":{"lines":"13,15"}},{"content":"Estoque Combo","children":[{"content":"Atualizar com Base no Menor Estoque Físico dos Componentes","children":[],"payload":{"lines":"16,17"}}],"payload":{"lines":"15,17"}}],"payload":{"lines":"6,17"}}],"payload":{"lines":"4,17"}}],"payload":{"lines":"3,17"}},{"content":"Estoque Virtual &lt;= 0","children":[{"content":"Produto Indisponível no Site","children":[],"payload":{"lines":"18,19"}}],"payload":{"lines":"17,19"}}],"payload":{"lines":"2,3"}}],"payload":{"lines":"0,1"}},null)</script>
+</body>
+</html>
